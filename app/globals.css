@@ -74,3 +74,6 @@
     @apply bg-background text-foreground;
   }
 }
+/* .btn{
+  text-transform: none;
+} */
