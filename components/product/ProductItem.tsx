@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const ProductItem = ( {product}: {product: Product}) => {
   return (
-    <div className="card bg-base-300 shadow-xl mb-4">
+    <div className="card bg-base-300 shadow-xl mb-2">
       <figure>
         <Link href={`/product/${product.slug}`}>
           <Image
@@ -12,11 +12,11 @@ const ProductItem = ( {product}: {product: Product}) => {
             alt={product.name}
             width={300}
             height={300}
-            className="object-cover h-64 w-full"
+            className="object-cover object-center of h-64 w-72 rounded-lg hover:scale-110 duration-500"
           />
         </Link>
       </figure>
-      <div className="card-body">
+      <div className="card-body p-4">
         <Link href={`/product/${product.slug}`}>
           <h2 className="card-title font-normal">{product.name}</h2>
         </Link>
