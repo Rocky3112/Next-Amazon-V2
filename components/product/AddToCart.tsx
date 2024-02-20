@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function AddToCart({item}: {item:OrderItem}){
     const router = useRouter()
-    const { items, increase} = useCartService()
+    const { items, increase, decrease} = useCartService()
      const [existItem, setExistItem] = useState<OrderItem | undefined>()
 console.log(items);
 console.log(increase);
@@ -16,12 +16,13 @@ console.log(increase);
 
      const addToCartHandler =()=>{
         increase(item)
+        
      }
 
      return existItem ? 
      (
         <div>
-            <button className="btn" type="button"> - </button>
+            <button className="btn" type="button" onClick={()=>decrease(existItem)}> - </button>
             <span className="px-2">{existItem.qty}</span>
             <button className="btn" type="button" onClick={()=>increase(existItem)} > + </button>
         </div>
