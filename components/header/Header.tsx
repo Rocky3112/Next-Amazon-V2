@@ -1,23 +1,35 @@
 import Link from 'next/link'
 import React from 'react'
+import Menu from './Menu'
 
 const Header = () => {
   return (
     <header>
-        <nav>
-            <div className=' navbar justify-between bg-base-300 px-8'>
-                <Link href="/" className='btn btn-ghost bg-base-300 uppercase text-xl'>
-                Next Amazon V2
-                </Link>
-                <ul>
-                    <li>
-                        <Link href="/cart" className='btn btn-ghost '>Cart</Link>
-                    </li>
-                    <li>
-                        <Link href="/login" className='btn btn-ghost '>Login</Link>
-                    </li>
-                </ul>
-            </div>
+      <nav>
+        <div className="navbar justify-between bg-base-300">
+          <div>
+            <label htmlFor="my-drawer" className="btn btn-square btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block w-5 h-5 stroke-current"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+            <Link href="/" className="btn btn-ghost text-lg">
+              Next Amazona V2
+            </Link>
+          </div>
+
+          <Menu />
+        </div>
         </nav>
     </header>
   )
