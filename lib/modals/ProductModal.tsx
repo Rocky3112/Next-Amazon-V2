@@ -6,7 +6,7 @@ export type Product = {
     banner?: string
     brand: string
     description: string
-    category: string
+    category?: string
     subcategory: string
     product?: string
     price: number

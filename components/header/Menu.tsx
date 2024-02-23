@@ -18,6 +18,11 @@ const Menu = () => {
                     Products
                 </Link>
             </li>
+        <li>
+                <Link href="/men" className='btn btn-ghost rounded-btn text-lg'>
+                    Men
+                </Link>
+            </li>
             <li>
                 <Link  className='btn btn-ghost rounded-btn text-lg' href="/cart">Cart 
                 {mounted && items.length != 0 && (

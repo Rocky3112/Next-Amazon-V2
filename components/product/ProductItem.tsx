@@ -28,6 +28,7 @@ const ProductItem = ( {product}: {product: Product}) => {
         </div>
       </div>
     </div>
+  
     </div>
   )
 }
