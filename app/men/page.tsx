@@ -1,6 +1,7 @@
 import Men from '@/components/Men/Men'
 import data from '@/lib/data'
 import React from 'react'
+import Tshirt from './tshirt/page';
 
 const Mens = () => {
     const mensData = data.products.filter((product) => product.category?.toLowerCase() === 'mens');
@@ -17,6 +18,7 @@ const Mens = () => {
         ))
       }
     </div>
+    {/* <Tshirt mensData={mensData[0]}></Tshirt> */}
     
     </>
   )

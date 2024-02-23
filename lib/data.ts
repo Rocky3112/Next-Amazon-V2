@@ -65,7 +65,7 @@ const data = {
       banner: "/images/mens/banner2.webp",
     },
     {
-      name: "Floral Maxi Dress",
+      name: "Women Comfy T-Shirt",
       slug: "womens-floral-maxi-dress",
       category: "Womens",
       subcategory: "Dress",
