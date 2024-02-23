@@ -12,9 +12,14 @@ const Menu = () => {
 
   return (
     <>
-        <ul className='flex items-stretch'>
+        <ul className='flex items-stretch '>
+        <li>
+                <Link href="/allProducts" className='btn btn-ghost rounded-btn text-lg'>
+                    Products
+                </Link>
+            </li>
             <li>
-                <Link  className='btn btn-ghost rounded-btn' href="/cart">Cart 
+                <Link  className='btn btn-ghost rounded-btn text-lg' href="/cart">Cart 
                 {mounted && items.length != 0 && (
                 <div className="badge badge-secondary">
                   {items.reduce((a, c) => a + c.qty, 0)}{' '}
@@ -23,8 +28,9 @@ const Menu = () => {
                     
                 </Link>
             </li>
+           
             <li>
-                <button className='btn btn-ghost rounded-btn'>
+                <button className='btn btn-ghost rounded-btn text-lg'>
                     Sign In
                 </button>
             </li>
