@@ -12,7 +12,7 @@ const Menu = () => {
 
   return (
     <>
-        <ul className='flex items-stretch '>
+        <ul className='flex items-stretch ' tabIndex={0}>
         <li>
                 <Link href="/allProducts" className='btn btn-ghost rounded-btn text-lg'>
                     Products
