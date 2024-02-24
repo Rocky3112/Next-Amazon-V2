@@ -4,7 +4,7 @@ import AllProducts from "@/components/AllProducts/AllProducts";
 
 const Mens = () => {
   const mensData = data.products.filter(
-    (product) => product.category?.toLowerCase() === "mens"
+    (product) => product.category?.toLowerCase() === "womens"
   );
 
   return (
