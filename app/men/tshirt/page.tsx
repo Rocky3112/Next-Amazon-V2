@@ -5,7 +5,7 @@ import Link from 'next/link';
 import React from 'react'
 
 const Tshirt = () => {
-    const mensTshirt = data?.products.filter((product) => product?.category?.toLowerCase()==='mens');
+    const mensTshirt = data?.products.filter((product) => product?.category?.toLowerCase() === 'mens');
     // console.log(mensTshirt);
     const mensTshirt1 = mensTshirt?.filter((product) => product?.subcategory?.toLowerCase()==='t-shirt');
     console.log(mensTshirt1);
