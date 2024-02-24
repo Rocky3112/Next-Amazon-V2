@@ -2,8 +2,8 @@ import data from "@/lib/data";
 import React from "react";
 import AllProducts from "@/components/AllProducts/AllProducts";
 
-const Mens = () => {
-  const mensData = data.products.filter(
+const Womens = () => {
+  const womensData = data.products.filter(
     (product) => product.category?.toLowerCase() === "womens"
   );
 
@@ -11,7 +11,7 @@ const Mens = () => {
     <>
       <h2 className="text-2xl py-2 lg:px-5 mx-auto lg:mx-0">Mens Products</h2>
       <div className=" grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 px-5">
-        {mensData?.map((product) => (
+        {womensData?.map((product) => (
           <AllProducts key={product.slug} product={product}></AllProducts>
         ))}
       </div>
@@ -20,4 +20,4 @@ const Mens = () => {
   );
 };
 
-export default Mens;
+export default Womens;

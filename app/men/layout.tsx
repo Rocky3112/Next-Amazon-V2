@@ -33,6 +33,13 @@ export default function MensLayout({children}: any){
                     </h3>
                   </div>
                 </Link>
+                <Link href="/men/shoe">
+                  <div className="  mb-2  gap-4 pl-5 hover:bg-gray-600 p-2 rounded-md cursor-pointer hover:shadow-lg hover:text-white">
+                    <h3 className="text-base text-gray-800 hover:text-white font-semibold ">
+                    Mens Shoe
+                    </h3>
+                  </div>
+                </Link>
                
             </div>
             <div>
