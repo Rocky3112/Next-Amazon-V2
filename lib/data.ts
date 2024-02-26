@@ -341,6 +341,22 @@ const data = {
       banner: "/images/kids/banner1.webp",
     },
     {
+      name: "Graphic Shoe",
+      slug: "kids-graphic-tshirt",
+      category: "Kids",
+      subcategory: "Shoe",
+      image: "/images/Kid-Shoe.jpg",
+      price: 18,
+      brand: "Disney",
+      rating: 4.9,
+      numReviews: 210,
+      countInStock: 70,
+      description:
+        "A comfortable cotton T-shirt with fun and colorful graphics, perfect for kids of all ages.",
+      isFeatured: true,
+      banner: "/images/kids/banner1.webp",
+    },
+    {
       name: "Sparkly Hair Clip",
       slug: "womens-sparkly-hair-clip",
       category: "Womens",
