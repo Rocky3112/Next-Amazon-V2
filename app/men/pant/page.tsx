@@ -9,7 +9,7 @@ const Pant = () => {
     const mensPants = data?.products.filter((product) => product?.category?.toLowerCase() === 'mens');
     // console.log(mensTshirt);
     const mensPants1 = mensPants?.filter((product) => product?.subcategory?.toLowerCase()==='pants');
-    console.log(mensPants1);
+    // console.log(mensPants1);
   return (
     <>
       
