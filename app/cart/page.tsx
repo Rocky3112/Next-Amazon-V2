@@ -26,7 +26,7 @@ export default function CartDetails() {
           Cart is empty. <Link href="/">Go shopping</Link>
         </div>
       ) : (
-        <div className="grid md:grid-cols-4 md:gap-5 h-screen">
+        <div className="grid md:grid-cols-4 md:gap-5 min-h-[70vh]">
           <div className="overflow-x-auto md:col-span-3">
             <table className="table">
               <thead>

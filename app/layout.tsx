@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,11 +21,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="min-h-screen flex flex-col">
           <Header></Header>
+        <div className="bg-[#eef0f0]">
         {children}
-        <footer className=" footer footer-center p-5 bg-base-300 ">
-<p>Copyright @ 2024 - All right reserved by Rocky Next-Amazon-V2</p>
-
-        </footer>
+        </div>
+        <Footer></Footer>
         </div>
         </body>
     </html>

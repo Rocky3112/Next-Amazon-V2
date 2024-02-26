@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div className="lg:navbar justify-between bg-base-300 hidden ">
+        <div className="lg:navbar justify-between bg-slate-800 text-white hidden ">
           <div>
             <Link href="/" className="btn btn-ghost text-lg">
               Next Amazona V2
